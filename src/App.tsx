@@ -9,6 +9,7 @@ import NoteList from "./NoteList";
 import NoteLayout from "./NoteLayout";
 import Note from "./Note";
 import EditNote from "./EditNote";
+import Navbar from "./Navbar";
 
 export type Note = {
   id: string;
@@ -99,6 +100,7 @@ function App() {
 
   return (
     <Container className="my-4">
+      <Navbar />
       <Routes>
         <Route
           path="/"
